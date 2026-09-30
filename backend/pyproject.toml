@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stringing-desk-api"
+version = "0.1.0"
+description = "FastAPI backend for the Stringing Desk badminton job tracker"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116,<1.0",
+  "uvicorn[standard]>=0.35,<1.0",
+]
+
+[tool.setuptools]
+py-modules = ["main"]
+
